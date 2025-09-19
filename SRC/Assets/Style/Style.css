@@ -1,0 +1,102 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f9f9f9, #eef5ff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  height: 200px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+headre h1{
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: black;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Lista de alunos */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+li {
+  display: flex;
+}
+
+/* Checkbox escondido */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilo de botão */
+label {
+  flex: 1;
+  cursor: pointer;
+}
+
+label span {
+  display: block;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background: #dc3545; /* vermelho */
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+label span:hover {
+  transform: translateY(-2px);
+}
+
+/* Quando marcado, fica verde */
+input[type="checkbox"]:checked + span {
+  background: #28a745; /* verde */
+}
+p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
